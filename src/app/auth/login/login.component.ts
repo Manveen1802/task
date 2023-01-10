@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent  implements OnInit {
   login:any;
+  
   constructor(private router: Router,){}
 
   ngOnInit() {
@@ -16,8 +17,13 @@ export class LoginComponent  implements OnInit {
       email:'',
       password:'',
     }
+  
    }
    submit(){
       this.router.navigate(['/dashboard']);
    }
+   signup(){
+    this.router.navigate(['/signup']);
+   }
+ 
 }

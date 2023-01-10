@@ -1,0 +1,25 @@
+.signup-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-card {
+    width: 30%;
+    top: 150px;
+    background-image:linear-gradient( #dd5e89 , #f7bb97);
+
+}
+
+.card-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.signup-input{
+    width: 100% !important;
+}
+.signup{
+    text-align: center;
+    font-size: 32px;
+    color: black;
+}
