@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import {InputTextModule} from 'primeng/inputtext';
-
 import {PasswordModule} from 'primeng/password';
+import {ButtonModule} from 'primeng/button';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -16,7 +18,10 @@ import {PasswordModule} from 'primeng/password';
   imports: [
     CommonModule,
     InputTextModule,
-    PasswordModule
+    PasswordModule,
+    ButtonModule,
+    RouterModule
+   
   ],
   exports:[
     LoginComponent,

@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);   
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 30%;
+    top: 150px;
+}
+
+.card-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-input{
+    width: 100% !important;
+}
+.signin{
+    width: 100%;
+}
