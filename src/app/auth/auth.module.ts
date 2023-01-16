@@ -6,26 +6,26 @@ import {InputTextModule} from 'primeng/inputtext';
 import {PasswordModule} from 'primeng/password';
 import {ButtonModule} from 'primeng/button';
 import { RouterModule } from '@angular/router';
-
+import { AuthRoutes } from './auth-routing.module';
+// import { AuthRoutingModule } from './auth-routing.module';
 
 
 
 @NgModule({
   declarations: [
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+
   ],
   imports: [
     CommonModule,
     InputTextModule,
     PasswordModule,
     ButtonModule,
-    RouterModule
+    RouterModule.forChild(AuthRoutes),
+   
    
   ],
-  exports:[
-    LoginComponent,
-    SignupComponent
-  ]
+  exports: [RouterModule]
 })
 export class AuthModule { }

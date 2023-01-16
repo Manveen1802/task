@@ -7,11 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent  implements OnInit{
-  Signup:any;
-  constructor(private router: Router,){}
+  // Signup:any;
+  constructor(private router: Router){}
 
   ngOnInit() {}
   signup(){
-    this.router.navigate(['/login']);
+    this.router.navigateByUrl('auth/login');
    }
 }

@@ -8,22 +8,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent  implements OnInit {
-  login:any;
+  // login:any;
   
-  constructor(private router: Router,){}
+  constructor(private router: Router){}
 
   ngOnInit() {
-    this.login = {
-      email:'',
-      password:'',
-    }
+    // this.login = {
+    //   email:'',
+    //   password:'',
+    // }
   
    }
    submit(){
-      this.router.navigate(['/dashboard']);
+      this.router.navigateByUrl('admin/dashboard');
    }
    signup(){
-    this.router.navigate(['/signup']);
+    this.router.navigateByUrl('auth/signup');
    }
  
 }
