@@ -5,6 +5,10 @@ import { AdminRoutes } from './admin-routing.module';
 import { RouterModule } from '@angular/router';
 import {TableModule} from 'primeng/table';
 import {DialogModule} from 'primeng/dialog';
+import {AnimateModule} from 'primeng/animate';
+import {InputTextModule} from 'primeng/inputtext';
+import {DropdownModule} from 'primeng/dropdown';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -20,7 +24,12 @@ import {DialogModule} from 'primeng/dialog';
     CommonModule,
     RouterModule.forChild(AdminRoutes),
     TableModule,
-    DialogModule
+    DialogModule,
+    AnimateModule,
+    InputTextModule,
+    DropdownModule,
+    FormsModule
+
   ],
   exports: [RouterModule]
 })

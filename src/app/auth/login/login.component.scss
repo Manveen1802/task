@@ -21,3 +21,18 @@
 .signin{
     width: 100%;
 }
+@media all and (min-width: 375px) and (max-width: 768px) { 
+    .login-card {
+       width: 80%;
+        top: 30px;
+        background-image:linear-gradient( #dd5e89 , #f7bb97);
+    }
+}
+ 
+@media all and (max-width: 375px) {
+    .login-card {
+        width: 80%;
+        top: 30px;
+        background-image:linear-gradient( #dd5e89 , #f7bb97);
+    }
+ }

@@ -7,6 +7,8 @@ import {PasswordModule} from 'primeng/password';
 import {ButtonModule} from 'primeng/button';
 import { RouterModule } from '@angular/router';
 import { AuthRoutes } from './auth-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 // import { AuthRoutingModule } from './auth-routing.module';
 
 
@@ -15,14 +17,18 @@ import { AuthRoutes } from './auth-routing.module';
   declarations: [
     LoginComponent,
     SignupComponent,
-
+      
   ],
   imports: [
     CommonModule,
     InputTextModule,
     PasswordModule,
     ButtonModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     RouterModule.forChild(AuthRoutes),
+    
    
    
   ],

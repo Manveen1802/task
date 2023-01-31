@@ -23,3 +23,21 @@
     font-size: 32px;
     color: black;
 }
+.signup-input{
+    width: 100%;
+}
+.otp-box {
+    display: flex;
+    justify-content: center;
+
+    .otp-field {
+        height: 50px;
+        font-size: 1rem;
+        padding: 0.25rem !important;
+        background-color: #E1E1E1;
+        width: 50px;
+        margin-left: 10PX;
+        border: 1px solid #E1E1E1
+    }
+
+}
